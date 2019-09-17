@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style> /* Centered */
+html, body {
+	margin: 0;
+	padding: 0;
+
+	width: 100%;
+	height: 100%;
+}
+	.centered {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+</style>
+
+
+<style> /* Padding between the buttons*/
+	th, td {
+  padding: 4px;
+}
+</style>
+
+<style> /* All buttons atributes */
+
+.allbuttons {
+
+border-radius:4px;
+display:inline-block;
+	padding:6px 24px;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+	cursor:pointer;
+	color:#ffffff;
+}
+	</style>
+
+<style> /* Gradient */
+
+#b1, #b9, #b10, #b11, #b12 {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+}
+#b2 {
+	
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+}
+#b3 {
+
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #89c403), color-stop(1, #77a809));
+	background:-moz-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-webkit-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-o-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-ms-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+}
+#b4 {
+
+	background:-moz-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background:-webkit-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background:-o-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background:-ms-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+}
+</style> 
+
+<style> /* Individual color-stylings */
+
+#b1, #b5, #b9, #b10, #b11, #b12 {
+
+	background-color:#ffffff;
+	border:1px solid #dcdcdc;
+	text-shadow:0px 1px 0px #ffffff;
+	color:#666666
+}
+#b2, #b6 {
+
+	background-color:#f24537;
+	border:1px solid #d02718;
+	text-shadow:0px 1px 0px #810e05;
+}
+#b3, #b7 {
+	
+	background-color:#89c403;
+	border:1px solid #74b807;
+	text-shadow:0px 1px 0px #528009;
+}
+#b4, #b8 {
+	
+	background-color:#79bbff;
+	border:1px solid #84bbf3;
+	text-shadow:0px 1px 0px #528ecc;
+}
+</style>
+
+<style> /* Row 1 buttons shadow */
+#b1, #b2, #b3, #b4 {
+	box-shadow: 0px 2px 1px -1px rgba(87,85,87,1);
+}
+	</style>
+
+<style> /* Row 2 pale buttons */
+
+#b5 {
+	color: #9d9ba0;
+	background-color: #f5f5f5;
+
+}
+#b6 {
+	color: #ffcccc;
+	background-color: #b00002
+}
+#b7 {
+	color: #f4fde8;
+	background-color: #5fa707;
+}
+#b8 {
+	background-color: #01a9d1;
+	color: #e6f9ff;
+}
+</style>
+
+<style> /* Row 3 */
+
+#b9, #b10, #b11, #b12  {
+  float: left;
+  border: 1px solid grey;
+  border-radius:0px;
+}
+
+	#b9 {  /* Round corners */
+		border-radius: 4px 0px 0px 4px;   /*  [top-left] [top-right] [bottom-right] [bottom-left] */
+	}
+	#b12 {
+		border-radius: 0px 4px 4px 0px; /* |-|-| */
+	}
+
+	.r3-group {   /* Background box */
+	padding: 7px;
+	background-clip: border-box;
+	background: #e0e0e0;
+	border-radius: 6px;
+}
+	</style>
+
+</head>
+
+
+<body>
+
+
+  <div class="centered">
+  	<div class="form-group">
+		<button id="b1" class="allbuttons">Button</button>
+		<button id="b2" class="allbuttons">Button</button>
+		<button id="b3" class="allbuttons">Button</button>
+		<button id="b4" class="allbuttons">Button</button>
+		<br> <br>
+		<button id="b5" class="allbuttons">Button</button>
+		<button id="b6" class="allbuttons">Button</button>
+		<button id="b7" class="allbuttons">Button</button>
+		<button id="b8" class="allbuttons">Button</button>
+	</div>
+
+<br> 
+		<div class="r3-group">
+		  <button id="b9"  class="allbuttons">Button</button>
+		  <button id="b10" class="allbuttons">Button</button>
+		  <button id="b11" class="allbuttons">Button</button>
+		  <button id="b12" class="allbuttons">Button</button>
+		</div>
+  </div> 
+
+
+</body>
+
+
+</html>
